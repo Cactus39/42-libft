@@ -6,13 +6,13 @@
 /*   By: dsutormi <dsutormi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 16:27:47 by dsutormi          #+#    #+#             */
-/*   Updated: 2026/04/22 18:07:54 by dsutormi         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:52:59 by dsutormi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_word_count(char const *p, char c)
+static int	ft_word_count(char const *p, char c)
 {
 	int	wc;
 	int	flag;
@@ -36,7 +36,7 @@ int	ft_word_count(char const *p, char c)
 	return (wc);
 }
 
-int	ft_word_len(char const *p, char c)
+static int	ft_word_len(char const *p, char c)
 {
 	int	wl;
 	int	flag;
@@ -54,7 +54,7 @@ int	ft_word_len(char const *p, char c)
 	return (wl);
 }
 
-char	**ft_free_split(char **arr, int i)
+static char	**ft_free_split(char **arr, int i)
 {
 	while (i > 0)
 	{

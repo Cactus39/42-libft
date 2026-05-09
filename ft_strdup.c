@@ -6,13 +6,13 @@
 /*   By: dsutormi <dsutormi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 12:01:39 by dsutormi          #+#    #+#             */
-/*   Updated: 2026/04/22 12:27:59 by dsutormi         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:53:21 by dsutormi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(const char *src, char *dest)
+static char	*ft_strcpy(const char *src, char *dest)
 {
 	int		i;
 
